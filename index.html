@@ -1,1 +1,47 @@
+<! -- Hello world, learning to make webpages ! -->
+<!DOCTYPE html>
+<html lang="en">
+  <title> Relentless </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
 
+  <style>
+      .grid{
+          display: grid;
+          grid-gap: 2rem
+      }
+
+      .grid-5 {
+          grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      }
+
+      .item-1 {
+          grid-column-start: 1;
+          grid-column-end: 3;
+      }
+
+      .item-2{
+          grid-column-start: 3;
+          grid-column-end: 6;
+      }
+  </style>
+
+  <body class = "sans-serif">
+      <header class="pv3 mw9 ph3 mb2 flex items-center justify-between">
+            <a class= "f4 fw7 dib pa2 no-underline bg-animate bg-white hover-bg-gold black" href="about.html">About The Tiger Project</a>
+            <a class= "6 link dim br-pill ba bw2 ph3 pv2 xmb2 dib black" href="report.html">Report Wildlife Crime</a>
+        </header>
+
+        <section> 
+            <div class="grid grid-5 mw9 center ph3 mb2">
+                <div class="item-1 flex items-center"><h1>The wild tiger population is declining rapidly all over the world, much of it due to human activity and the illegal wildlife trade.</h1></div>
+                <div class="item-2"><img src="/images/Siberian tiger in the snow.jpeg"></div>
+            </div>
+
+            <div>
+
+            </div>
+        </section>
+
+    </body>
+</html>
